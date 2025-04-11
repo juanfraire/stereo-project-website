@@ -24,6 +24,7 @@
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <script>
         tailwind.config = {
             theme: {
@@ -39,6 +40,24 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                 }
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ResearchProject",
+            "name": "STEREO - Space-Terrestrial Integrated IoT",
+            "url": "https://stereo-project.space/",
+            "description": "Academic project on integrating terrestrial IoT with LEO satellite networks. Funded by ANR.",
+            "funder": {
+            "@type": "Organization",
+            "name": "ANR - Agence Nationale de la Recherche"
+            },
+            "creator": {
+            "@type": "Person",
+            "name": "Juan A. Fraire",
+            "affiliation": "Inria"
             }
         }
     </script>
