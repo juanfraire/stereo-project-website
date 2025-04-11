@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEREO - Space-Terrestrial Integrated IoT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(30, 64, 175, 0.9) 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .partner-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .partner-logo:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        
+        .wp-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-satellite-dish text-primary text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">STEREO</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#highlights" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Highlights</a>
+                    <a href="#workpackages" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Work Packages</a>
+                    <a href="#partners" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Partners</a>
+                    <a href="#publications" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Publications</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">About</a>
+                <a href="#highlights" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Highlights</a>
+                <a href="#workpackages" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Work Packages</a>
+                <a href="#partners" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Partners</a>
+                <a href="#publications" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Publications</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient pt-24 pb-20 md:pt-32 md:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 text-white">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                        Space-Terrestrial Integrated IoT
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 opacity-90">
+                        Pioneering global connectivity by integrating terrestrial IoT with satellite networks for seamless, energy-efficient communication anywhere on Earth.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#about" class="bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-300">
+                            Learn More
+                        </a>
+                        <a href="#publications" class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition duration-300">
+                            Publications
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block md:w-1/2 mt-10 md:mt-0">
+                    <div class="relative">
+                        <div class="absolute -top-10 -left-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                        <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" 
+                                 alt="Satellite in space" 
+                                 class="rounded-lg shadow-2xl border-4 border-white border-opacity-20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">About STEREO</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1541873676-a18131494184?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" 
+                         alt="IoT devices" 
+                         class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-600 mb-6">
+                        The STEREO project envisions a future where Internet of Things (IoT) devices are no longer bound to terrestrial infrastructure. By integrating low-power IoT technologies such as LoRaWAN and NB-IoT with Low-Earth Orbit (LEO) satellite gateways, STEREO pioneers a hybrid space-terrestrial network architecture.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        This 4-year academic project, led by Inria and supported by a consortium of top academic and industrial partners, breaks new ground in network architectures, protocol design, and real-world validation for Direct-to-Satellite IoT (DtS-IoT) services.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-full">
+                            <i class="fas fa-globe text-primary mr-2"></i>
+                            <span class="text-sm font-medium">Global Connectivity</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-full">
+                            <i class="fas fa-bolt text-primary mr-2"></i>
+                            <span class="text-sm font-medium">Energy-Efficient</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-full">
+                            <i class="fas fa-satellite text-primary mr-2"></i>
+                            <span class="text-sm font-medium">LEO Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Key Highlights</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover transition duration-300">
+                    <div class="wp-icon bg-blue-100 text-primary">
+                        <i class="fas fa-network-wired text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Seamless IoT</h3>
+                    <p class="text-gray-600">Devices can connect to terrestrial gateways or directly to LEO satellites without interruption.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover transition duration-300">
+                    <div class="wp-icon bg-blue-100 text-primary">
+                        <i class="fas fa-globe-americas text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Global Impact</h3>
+                    <p class="text-gray-600">Applications include environmental monitoring, asset tracking, and remote sensing in remote regions.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover transition duration-300">
+                    <div class="wp-icon bg-blue-100 text-primary">
+                        <i class="fas fa-flask text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Cutting-Edge Research</h3>
+                    <p class="text-gray-600">Combines simulation, hardware prototyping, and in-orbit validation for robust results.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover transition duration-300">
+                    <div class="wp-icon bg-blue-100 text-primary">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
+                    <p class="text-gray-600">Favors sparse constellations and efficient protocols to minimize space debris and costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Packages Section -->
+    <section id="workpackages" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Project Work Packages</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+                    Each work package tackles a critical layer of the space-terrestrial IoT stack
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                            <span class="font-bold">0</span>
+                        </div>
+                        <h3 class="text-lg font-semibold">Project Management</h3>
+                    </div>
+                    <p class="text-gray-600">Oversees coordination, partner communication, progress tracking, and public outreach.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                            <span class="font-bold">1</span>
+                        </div>
+                        <h3 class="text-lg font-semibold">Architecture Definition</h3>
+                    </div>
+                    <p class="text-gray-600">Designs the end-to-end system architecture combining LPWAN and Argos technologies.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                            <span class="font-bold">2</span>
+                        </div>
+                        <h3 class="text-lg font-semibold">Technology Evaluation</h3>
+                    </div>
+                    <p class="text-gray-600">Evaluates physical, link, and network layer performance via simulation.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                            <span class="font-bold">3</span>
+                        </div>
+                        <h3 class="text-lg font-semibold">Software Components</h3>
+                    </div>
+                    <p class="text-gray-600">Develops key software modules including synchronization and routing.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                            <span class="font-bold">4</span>
+                        </div>
+                        <h3 class="text-lg font-semibold">Hardware Components</h3>
+                    </div>
+                    <p class="text-gray-600">Builds and tests hybrid radio components integrating LoRaWAN and Kinéis protocols.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                            <span class="font-bold">5</span>
+                        </div>
+                        <h3 class="text-lg font-semibold">Application Validation</h3>
+                    </div>
+                    <p class="text-gray-600">Validates the system via lab testbeds, balloon flights, and in-orbit experiments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Project Partners</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+                <div class="partner-logo flex justify-center">
+                    <div class="bg-white p-6 rounded-lg shadow-sm w-full max-w-xs flex items-center justify-center">
+                        <span class="text-xl font-bold text-gray-700">Inria</span>
+                    </div>
+                </div>
+                <div class="partner-logo flex justify-center">
+                    <div class="bg-white p-6 rounded-lg shadow-sm w-full max-w-xs flex items-center justify-center">
+                        <span class="text-xl font-bold text-gray-700">Kinéis</span>
+                    </div>
+                </div>
+                <div class="partner-logo flex justify-center">
+                    <div class="bg-white p-6 rounded-lg shadow-sm w-full max-w-xs flex items-center justify-center">
+                        <span class="text-xl font-bold text-gray-700">IRIT</span>
+                    </div>
+                </div>
+                <div class="partner-logo flex justify-center">
+                    <div class="bg-white p-6 rounded-lg shadow-sm w-full max-w-xs flex items-center justify-center">
+                        <span class="text-xl font-bold text-gray-700">LIG</span>
+                    </div>
+                </div>
+                <div class="partner-logo flex justify-center">
+                    <div class="bg-white p-6 rounded-lg shadow-sm w-full max-w-xs flex items-center justify-center">
+                        <span class="text-xl font-bold text-gray-700">LAAS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Publications</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Publication placeholder 1</h3>
+                    <p class="text-gray-600 mb-3">Authors, Journal/Conference, Year</p>
+                    <a href="#" class="text-primary font-medium inline-flex items-center">
+                        Read more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Publication placeholder 2</h3>
+                    <p class="text-gray-600 mb-3">Authors, Journal/Conference, Year</p>
+                    <a href="#" class="text-primary font-medium inline-flex items-center">
+                        Read more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Publication placeholder 3</h3>
+                    <p class="text-gray-600 mb-3">Authors, Journal/Conference, Year</p>
+                    <a href="#" class="text-primary font-medium inline-flex items-center">
+                        Read more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-satellite-dish text-primary text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">STEREO</span>
+                    </div>
+                    <p class="mt-4 text-gray-400 max-w-xs">
+                        Space-Terrestrial Integrated IoT - Pioneering global connectivity through hybrid network architectures.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Project</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                            <li><a href="#highlights" class="text-gray-400 hover:text-white">Highlights</a></li>
+                            <li><a href="#workpackages" class="text-gray-400 hover:text-white">Work Packages</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Resources</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#partners" class="text-gray-400 hover:text-white">Partners</a></li>
+                            <li><a href="#publications" class="text-gray-400 hover:text-white">Publications</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Connect</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">GitHub</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <p class="text-gray-400 text-sm text-center">
+                    &copy; 2023 STEREO Project. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-lg');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.add('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>
