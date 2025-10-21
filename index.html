@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,16 @@
     <meta name="author" content="Juan A. Fraire">.
     <!-- Meta preview for social sharing -->
     <meta property="og:title" content="STEREO Project" />
-    <meta property="og:description" content="Space-Terrestrial Integrated IoT - Financed by the French National Research Agency (ANR)." />
+    <meta property="og:description"
+        content="Space-Terrestrial Integrated IoT - Financed by the French National Research Agency (ANR)." />
     <meta property="og:image" content="https://stereo-project.space/planet.png" />
     <meta property="og:url" content="https://stereo-project.space/" />
     <meta property="og:type" content="website" />
     <!-- Twitter card support -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="STEREO Project" />
-    <meta name="twitter:description" content="Space-Terrestrial Integrated IoT - Financed by the French National Research Agency (ANR)." />
+    <meta name="twitter:description"
+        content="Space-Terrestrial Integrated IoT - Financed by the French National Research Agency (ANR)." />
     <meta name="twitter:image" content="https://stereo-project.space/planet.png" />
     <title>STEREO - Space-Terrestrial Integrated IoT</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -63,32 +66,33 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
+
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
         }
 
         .hero-gradient.bg-opacity-90 {
-            background-color: rgba(30, 64, 175, 0.55); /* dark blue overlay */
+            background-color: rgba(30, 64, 175, 0.55);
+            /* dark blue overlay */
         }
-        
+
         .card-hover:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
-        
+
         .partner-logo {
             filter: grayscale(100%);
             opacity: 0.7;
             transition: all 0.3s ease;
         }
-        
+
         .partner-logo:hover {
             filter: grayscale(0);
             opacity: 1;
         }
-        
+
         .wp-icon {
             width: 60px;
             height: 60px;
@@ -100,6 +104,7 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
     <!-- Navigation -->
     <nav class="bg-white/80 backdrop-blur shadow-sm fixed w-full z-50">
@@ -113,37 +118,49 @@
                 </div>
                 <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
                     <a href="#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">About</a>
-                    <a href="#highlights" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Highlights</a>
-                    <a href="#workpackages" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Work Packages</a>
-                    <a href="#partners" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Partners</a>
+                    <a href="#highlights"
+                        class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Highlights</a>
+                    <a href="#workpackages" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Work
+                        Packages</a>
+                    <a href="#partners"
+                        class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Partners</a>
                     <a href="#team" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Team</a>
-                    <a href="#publications" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Publications</a>
+                    <a href="#publications"
+                        class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Publications</a>
                 </div>
                 <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                    <button type="button" id="mobile-menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
                         <span class="sr-only">Open main menu</span>
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
             </div>
         </div>
-        
+
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">About</a>
-                <a href="#highlights" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Highlights</a>
-                <a href="#workpackages" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Work Packages</a>
-                <a href="#partners" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Partners</a>
+                <a href="#about"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">About</a>
+                <a href="#highlights"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Highlights</a>
+                <a href="#workpackages"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Work
+                    Packages</a>
+                <a href="#partners"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Partners</a>
                 <a href="#team" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Team</a>
-                <a href="#publications" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Publications</a>
+                <a href="#publications"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Publications</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section with Parallax Background -->
     <header class="relative overflow-hidden pt-24 pb-20 md:pt-32 md:pb-28">
-        <div class="absolute inset-0 z-0 bg-fixed bg-cover bg-center" style="background-image: url('space-bg.jpg');"></div>
+        <div class="absolute inset-0 z-0 bg-fixed bg-cover bg-center" style="background-image: url('space-bg.jpg');">
+        </div>
         <div class="relative z-10 hero-gradient bg-opacity-90">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="md:flex md:items-center md:justify-between md:gap-12">
@@ -152,24 +169,30 @@
                             Space-Terrestrial Integrated IoT
                         </h1>
                         <p class="text-lg md:text-xl mb-8 opacity-90">
-                            Pioneering global connectivity by integrating terrestrial IoT with satellite networks for seamless, energy-efficient, low-data-rate communication anywhere on Earth.
+                            Pioneering global connectivity by integrating terrestrial IoT with satellite networks for
+                            seamless, energy-efficient, low-data-rate communication anywhere on Earth.
                         </p>
                         <div class="flex space-x-4">
-                            <a href="#about" class="bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-300">
+                            <a href="#about"
+                                class="bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-300">
                                 Learn More
                             </a>
-                            <a href="#publications" class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition duration-300">
+                            <a href="#publications"
+                                class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition duration-300">
                                 Publications
                             </a>
                         </div>
                     </div>
                     <div class="md:w-1/2 mt-10 md:mt-0">
                         <div class="relative">
-                            <div class="absolute -top-10 -left-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-                            <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                            <div
+                                class="absolute -top-10 -left-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob">
+                            </div>
+                            <div
+                                class="absolute -bottom-10 -right-10 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000">
+                            </div>
                             <div class="relative">
-                                <img src="planet.svg" 
-                                    alt="Satellite IoT" 
+                                <img src="planet.svg" alt="Satellite IoT"
                                     class="rounded-lg shadow-2xl border-4 border-white border-opacity-20"
                                     loading="lazy">
                             </div>
@@ -183,24 +206,48 @@
     <!-- About Section -->
     <section id="about" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-8">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">About STEREO</h2>
                 <div class="w-20 h-1 bg-primary mx-auto"></div>
             </div>
             <div class="max-w-4xl mx-auto">
-                <div class="mb-8">
+
+                <!-- <div class="mb-8">
                         <img src="architecture.svg" 
                              alt="STEREO Architecture" 
                              class="rounded-lg shadow-lg w-full max-w-4xl mx-auto"
                              loading="lazy">
+                </div> -->
+
+                <div class="mb-12 aspect-[16/9]">
+                    <iframe class="w-full h-full rounded-lg shadow-lg"
+                        src="https://www.youtube.com/embed/69qllJeDkw0?rel=0" title="STEREO Video Presentation"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
+
                 <div class="max-w-4xl mx-auto">
                     <p class="text-lg text-gray-600 mb-6">
-                        The STEREO project envisions a future where Internet of Things (IoT) devices are no longer bound to terrestrial infrastructure. By integrating low-power IoT technologies such as LoRaWAN and NB-IoT with Low-Earth Orbit (LEO) satellite gateways, STEREO pioneers a hybrid space-terrestrial network architecture.
+                        The STEREO project envisions a future where Internet of Things (IoT) devices are no longer bound
+                        to terrestrial infrastructure. By integrating low-power IoT technologies such as LoRaWAN and
+                        NB-IoT with Low-Earth Orbit (LEO) satellite gateways, STEREO pioneers a hybrid space-terrestrial
+                        network architecture.
                     </p>
                     <p class="text-lg text-gray-600 mb-6">
-                        This 4-year academic project, led by Inria and supported by a consortium of top academic and industrial partners, breaks new ground in network architectures, protocol design, and real-world validation for Direct-to-Satellite IoT (DtS-IoT) services.
+                        This 4-year academic project, led by Inria and supported by a consortium of top academic and
+                        industrial partners, breaks new ground in network architectures, protocol design, and real-world
+                        validation for Direct-to-Satellite IoT (DtS-IoT) services.
                     </p>
+                </div>
+
+                <div class="mb-8">
+                    <img src="architecture.svg" alt="STEREO Architecture"
+                        class="rounded-lg shadow-lg w-full max-w-4xl mx-auto" loading="lazy">
+                </div>
+
+                <div class="max-w-4xl mx-auto">
                     <div class="flex flex-wrap gap-4 mt-8">
                         <div class="flex items-center bg-blue-50 px-4 py-2 rounded-full">
                             <i class="fas fa-globe text-primary mr-2"></i>
@@ -220,6 +267,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -237,28 +285,32 @@
                         <i class="fas fa-network-wired text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Seamless IoT</h3>
-                    <p class="text-gray-600">Unmodified devices can connect to terrestrial gateways or directly to LEO satellites.</p>
+                    <p class="text-gray-600">Unmodified devices can connect to terrestrial gateways or directly to LEO
+                        satellites.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-md card-hover transition duration-300">
                     <div class="wp-icon bg-blue-100 text-primary">
                         <i class="fas fa-globe-americas text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Global Impact</h3>
-                    <p class="text-gray-600">Low-data rate applications include environmental monitoring, asset tracking, and remote sensing.</p>
+                    <p class="text-gray-600">Low-data rate applications include environmental monitoring, asset
+                        tracking, and remote sensing.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-md card-hover transition duration-300">
                     <div class="wp-icon bg-blue-100 text-primary">
                         <i class="fas fa-flask text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Cutting-Edge Research</h3>
-                    <p class="text-gray-600">Combines simulation, hardware prototyping, and in-orbit protocol validation.</p>
+                    <p class="text-gray-600">Combines simulation, hardware prototyping, and in-orbit protocol
+                        validation.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-md card-hover transition duration-300">
                     <div class="wp-icon bg-blue-100 text-primary">
                         <i class="fas fa-leaf text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
-                    <p class="text-gray-600">Favors sparse constellations and latency-tolerant protocols to minimize costs and complexity.</p>
+                    <p class="text-gray-600">Favors sparse constellations and latency-tolerant protocols to minimize
+                        costs and complexity.</p>
                 </div>
             </div>
         </div>
@@ -277,25 +329,30 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <div
+                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                             <span class="font-bold">0</span>
                         </div>
                         <h3 class="text-lg font-semibold">Project Management</h3>
                     </div>
-                    <p class="text-gray-600">Oversees coordination, partner communication, progress tracking, and public outreach.</p>
+                    <p class="text-gray-600">Oversees coordination, partner communication, progress tracking, and public
+                        outreach.</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <div
+                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                             <span class="font-bold">1</span>
                         </div>
                         <h3 class="text-lg font-semibold">Architecture Definition</h3>
                     </div>
-                    <p class="text-gray-600">Designs the end-to-end system architecture combining LPWAN and Argos technologies.</p>
+                    <p class="text-gray-600">Designs the end-to-end system architecture combining LPWAN and Argos
+                        technologies.</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <div
+                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                             <span class="font-bold">2</span>
                         </div>
                         <h3 class="text-lg font-semibold">Technology Evaluation</h3>
@@ -304,30 +361,36 @@
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <div
+                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                             <span class="font-bold">3</span>
                         </div>
                         <h3 class="text-lg font-semibold">Software Components</h3>
                     </div>
-                    <p class="text-gray-600">Develops key software modules including synchronization and constellation management.</p>
+                    <p class="text-gray-600">Develops key software modules including synchronization and constellation
+                        management.</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <div
+                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                             <span class="font-bold">4</span>
                         </div>
                         <h3 class="text-lg font-semibold">Hardware Components</h3>
                     </div>
-                    <p class="text-gray-600">Builds and tests hybrid radio components integrating LoRaWAN and Kinéis protocols.</p>
+                    <p class="text-gray-600">Builds and tests hybrid radio components integrating LoRaWAN and Kinéis
+                        protocols.</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <div
+                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                             <span class="font-bold">5</span>
                         </div>
                         <h3 class="text-lg font-semibold">Application Validation</h3>
                     </div>
-                    <p class="text-gray-600">Validates the system via lab testbeds, balloon flights, and in-orbit experiments.</p>
+                    <p class="text-gray-600">Validates the system via lab testbeds, balloon flights, and in-orbit
+                        experiments.</p>
                 </div>
             </div>
         </div>
@@ -383,10 +446,12 @@
                 <div class="w-20 h-1 bg-primary mx-auto"></div>
             </div>
             <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                The STEREO project brings together a multidisciplinary team of researchers and engineers from leading French academic institutions and industries working on cutting-edge IoT and satellite technologies.
+                The STEREO project brings together a multidisciplinary team of researchers and engineers from leading
+                French academic institutions and industries working on cutting-edge IoT and satellite technologies.
             </p>
             <div class="flex justify-center">
-                <img src="team.jpg" alt="STEREO Project Team" class="rounded-lg shadow-lg max-w-4xl w-full" loading="lazy">
+                <img src="team.jpg" alt="STEREO Project Team" class="rounded-lg shadow-lg max-w-4xl w-full"
+                    loading="lazy">
             </div>
         </div>
     </section>
@@ -409,30 +474,42 @@
                     </div>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">A wake-up strategy enabling GNSS-free NB-IoT links to sparse LEO satellite constellations</h3>
-                    <p class="text-gray-600 mb-3">Zheng Zhou, Nicola Accettura, Pascal Berthou. IEEE Internet of Things Journal, 2025, pp.1-1.</p>
-                    <a href="https://hal.science/hal-04748785v2" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">A wake-up strategy enabling GNSS-free NB-IoT links to sparse
+                        LEO satellite constellations</h3>
+                    <p class="text-gray-600 mb-3">Zheng Zhou, Nicola Accettura, Pascal Berthou. IEEE Internet of Things
+                        Journal, 2025, pp.1-1.</p>
+                    <a href="https://hal.science/hal-04748785v2"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Enhanced LR-FHSS Receiver for Headerless Frame Recovery in Space-Terrestrial Integrated IoT Networks</h3>
-                    <p class="text-gray-600 mb-3">Diego Maldonado, Leonardo S Cardoso, Juan A Fraire, Alexandre Guitton, Oana Iova, Megumi Kaneko, Hervé Rivano. Computer Networks, 2025, 257, pp.111018.</p>
-                    <a href="https://hal.science/hal-04864039" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Enhanced LR-FHSS Receiver for Headerless Frame Recovery in
+                        Space-Terrestrial Integrated IoT Networks</h3>
+                    <p class="text-gray-600 mb-3">Diego Maldonado, Leonardo S Cardoso, Juan A Fraire, Alexandre Guitton,
+                        Oana Iova, Megumi Kaneko, Hervé Rivano. Computer Networks, 2025, 257, pp.111018.</p>
+                    <a href="https://hal.science/hal-04864039"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">On the role of machine learning in satellite internet of things: A survey of techniques, challenges, and future directions</h3>
-                    <p class="text-gray-600 mb-3">Alexander Y Choquenaira-Florez, Juan A Fraire, Hannah B Pasandi, Hervé Rivano. Computer Networks, 2025, 259, pp.111063.</p>
-                    <a href="https://hal.science/hal-04864039" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">On the role of machine learning in satellite internet of
+                        things: A survey of techniques, challenges, and future directions</h3>
+                    <p class="text-gray-600 mb-3">Alexander Y Choquenaira-Florez, Juan A Fraire, Hannah B Pasandi, Hervé
+                        Rivano. Computer Networks, 2025, 259, pp.111063.</p>
+                    <a href="https://hal.science/hal-04864039"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-                
+
                 <!-- 2024 -->
                 <div class="w-full my-8">
                     <div class="flex items-center justify-center">
@@ -442,58 +519,89 @@
                     </div>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">On the Use of Mega Constellation Services in Space: Integrating LEO Platforms into 6G Non-Terrestrial Networks</h3>
-                    <p class="text-gray-600 mb-3">Gabriel Maiolini Capez, Mauricio A Cáceres, Roberto Armellin, Chris P Bridges, Juan A Fraire, Stefan Frey, Roberto Garello. IEEE Journal on Selected Areas in Communications, 2024 </p>
-                    <a href="https://hal.science/hal-04711308" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">On the Use of Mega Constellation Services in Space:
+                        Integrating LEO Platforms into 6G Non-Terrestrial Networks</h3>
+                    <p class="text-gray-600 mb-3">Gabriel Maiolini Capez, Mauricio A Cáceres, Roberto Armellin, Chris P
+                        Bridges, Juan A Fraire, Stefan Frey, Roberto Garello. IEEE Journal on Selected Areas in
+                        Communications, 2024 </p>
+                    <a href="https://hal.science/hal-04711308"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Towards Optimal Placement of Free-Space Optical Terminal on the Spacecraft Body</h3>
-                    <p class="text-gray-600 mb-3">Juan A Fraire, Joan A Ruiz-De-Azua, Elena Fernandez-Nino. IEEE Transactions on Aerospace and Electronic Systems, 2024, pp.1-15.</p>
-                    <a href="https://hal.science/hal-04711310" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Towards Optimal Placement of Free-Space Optical Terminal on
+                        the Spacecraft Body</h3>
+                    <p class="text-gray-600 mb-3">Juan A Fraire, Joan A Ruiz-De-Azua, Elena Fernandez-Nino. IEEE
+                        Transactions on Aerospace and Electronic Systems, 2024, pp.1-15.</p>
+                    <a href="https://hal.science/hal-04711310"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">A Survey on Direct-to-Device Satellite Communications: Advances, Challenges, and Prospects</h3>
-                    <p class="text-gray-600 mb-3">Hannaneh B Pasandi, Juan A Fraire, Sylvia Ratnasamy, Herve Rivano. LEO-NET '24: Proceedings of the 2nd International Workshop on LEO Networking and Communication, Nov 2024, Washington DC USA, United States. pp.7-12,</p>
-                    <a href="https://inria.hal.science/hal-04791559" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">A Survey on Direct-to-Device Satellite Communications:
+                        Advances, Challenges, and Prospects</h3>
+                    <p class="text-gray-600 mb-3">Hannaneh B Pasandi, Juan A Fraire, Sylvia Ratnasamy, Herve Rivano.
+                        LEO-NET '24: Proceedings of the 2nd International Workshop on LEO Networking and Communication,
+                        Nov 2024, Washington DC USA, United States. pp.7-12,</p>
+                    <a href="https://inria.hal.science/hal-04791559"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
                     <h3 class="text-lg font-semibold mb-2">IPN-V: The Interplanetary Network Visualizer</h3>
-                    <p class="text-gray-600 mb-3">Alice Le Bihan , Juan A Fraire , Pierre Francois , Felix Flentge. 2024 IEEE 10th International Conference on Space Mission Challenges for Information Technology (SMC-IT), Jul 2024, Mountain View, California, United States.</p>
-                    <a href="https://hal.science/hal-04996148" class="text-primary font-medium inline-flex items-center">
+                    <p class="text-gray-600 mb-3">Alice Le Bihan , Juan A Fraire , Pierre Francois , Felix Flentge. 2024
+                        IEEE 10th International Conference on Space Mission Challenges for Information Technology
+                        (SMC-IT), Jul 2024, Mountain View, California, United States.</p>
+                    <a href="https://hal.science/hal-04996148"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Distributed Volume Management in Space DTNs: Scoping Schedule-Aware Bundle Routing</h3>
-                    <p class="text-gray-600 mb-3">Olivier de Jonckere, Juan A Fraire, Scott Burleigh. 2024 IEEE 10th International Conference on Space Mission Challenges for Information Technology (SMC-IT), Jul 2024, Mountain View, California, United States.</p>
-                    <a href="https://hal.science/hal-04603605" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Distributed Volume Management in Space DTNs: Scoping
+                        Schedule-Aware Bundle Routing</h3>
+                    <p class="text-gray-600 mb-3">Olivier de Jonckere, Juan A Fraire, Scott Burleigh. 2024 IEEE 10th
+                        International Conference on Space Mission Challenges for Information Technology (SMC-IT), Jul
+                        2024, Mountain View, California, United States.</p>
+                    <a href="https://hal.science/hal-04603605"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Architectural Framework and Feasibility of Internet of Things-Driven Mars Exploration via Satellite Constellations</h3>
-                    <p class="text-gray-600 mb-3">Oscar Ledesma, Paula Lamo, Juan A Fraire, María Ruiz, Miguel A Sánchez. Electronics, 2024, 13 (7), pp.1289.</p>
-                    <a href="https://hal.science/hal-04711319" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Architectural Framework and Feasibility of Internet of
+                        Things-Driven Mars Exploration via Satellite Constellations</h3>
+                    <p class="text-gray-600 mb-3">Oscar Ledesma, Paula Lamo, Juan A Fraire, María Ruiz, Miguel A
+                        Sánchez. Electronics, 2024, 13 (7), pp.1289.</p>
+                    <a href="https://hal.science/hal-04711319"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Trends in LPWAN Technologies for LEO Satellite Constellations in the NewSpace Context</h3>
-                    <p class="text-gray-600 mb-3">Oscar Ledesma, Paula Lamo, Juan A Fraire. Electronics, 2024, 13 (3), pp.579.</p>
-                    <a href="https://hal.science/hal-04711323" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Trends in LPWAN Technologies for LEO Satellite Constellations
+                        in the NewSpace Context</h3>
+                    <p class="text-gray-600 mb-3">Oscar Ledesma, Paula Lamo, Juan A Fraire. Electronics, 2024, 13 (3),
+                        pp.579.</p>
+                    <a href="https://hal.science/hal-04711323"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -507,66 +615,102 @@
                     </div>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Polygon-Based Algorithms for N -Satellite Constellations Coverage Computing</h3>
-                    <p class="text-gray-600 mb-3">Santiago M Henn, Juan A Fraire, Holger Hermanns. IEEE Transactions on Aerospace and Electronic Systems, 2023, pp.1-17.</p>
-                    <a href="https://hal.science/hal-04189476" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Polygon-Based Algorithms for N -Satellite Constellations
+                        Coverage Computing</h3>
+                    <p class="text-gray-600 mb-3">Santiago M Henn, Juan A Fraire, Holger Hermanns. IEEE Transactions on
+                        Aerospace and Electronic Systems, 2023, pp.1-17.</p>
+                    <a href="https://hal.science/hal-04189476"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Quantitative analysis of segmented satellite network architectures: A maritime surveillance case study</h3>
-                    <p class="text-gray-600 mb-3">Juan A Fraire, Santiago Henn, Gregory Stock, Robin Ohs, Holger Hermanns, Felix Walter, Lynn van Broock, Gabriel Ruffini, Federico Machado, Pablo Serratti, Jose Relloso. Computer Networks, 2024, 255, pp.110874.</p>
-                    <a href="https://hal.science/hal-04762695" class="text-primary font-medium inline-flex items-center">
-                        Read more <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div> 
-
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Lightweight synchronization to NB-IoT enabled LEO Satellites through Doppler prediction</h3>
-                    <p class="text-gray-600 mb-3">Zheng Zhou, Nicola Accettura, Raoul Prévost, Pascal Berthou. The 19th International Conference on Wireless and Mobile Computing, Networking and Communications (IEEE WiMob 2023), Jun 2023, Montreal, Canada.</p>
-                    <a href="https://hal.science/hal-04054470v3" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Quantitative analysis of segmented satellite network
+                        architectures: A maritime surveillance case study</h3>
+                    <p class="text-gray-600 mb-3">Juan A Fraire, Santiago Henn, Gregory Stock, Robin Ohs, Holger
+                        Hermanns, Felix Walter, Lynn van Broock, Gabriel Ruffini, Federico Machado, Pablo Serratti, Jose
+                        Relloso. Computer Networks, 2024, 255, pp.110874.</p>
+                    <a href="https://hal.science/hal-04762695"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Lightweight synchronization to NB-IoT enabled LEO Satellites
+                        through Doppler prediction</h3>
+                    <p class="text-gray-600 mb-3">Zheng Zhou, Nicola Accettura, Raoul Prévost, Pascal Berthou. The 19th
+                        International Conference on Wireless and Mobile Computing, Networking and Communications (IEEE
+                        WiMob 2023), Jun 2023, Montreal, Canada.</p>
+                    <a href="https://hal.science/hal-04054470v3"
+                        class="text-primary font-medium inline-flex items-center">
+                        Read more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
                     <h3 class="text-lg font-semibold mb-2">Recovering Headerless Frames in LR-FHSS</h3>
-                    <p class="text-gray-600 mb-3">Juan A Fraire, Alexandre Guitton, Oana Iova. International Conference on Embedded Wireless Systems and Networks, Sep 2023, Rende, Italy. pp.1-11.</p>
-                    <a href="https://hal.science/hal-04152028" class="text-primary font-medium inline-flex items-center">
-                        Read more <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-                
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">On the Tractability of Yen's Algorithm and Contact Graph Modeling in Contact Graph Routing</h3>
-                    <p class="text-gray-600 mb-3">Olivier de Jonckère, Juan A Fraire, Scott Burleigh. 2023 IEEE International Conference on Wireless for Space and Extreme Environments (WiSEE), Sep 2023, Aveiro, Portugal. pp.80-86.</p>
-                    <a href="https://hal.science/hal-04711336" class="text-primary font-medium inline-flex items-center">
-                        Read more <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-                
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Inter-Regional Routing in Interplanetary Networks with Shortcuts and Contact Passageways</h3>
-                    <p class="text-gray-600 mb-3">Olivier de Jonckère, Juan A Fraire. 2023 IEEE International Conference on Wireless for Space and Extreme Environments (WiSEE), Sep 2023, Aveiro, Portugal. pp.80-86.</p>
-                    <a href="https://hal.science/hal-04711330" class="text-primary font-medium inline-flex items-center">
+                    <p class="text-gray-600 mb-3">Juan A Fraire, Alexandre Guitton, Oana Iova. International Conference
+                        on Embedded Wireless Systems and Networks, Sep 2023, Rende, Italy. pp.1-11.</p>
+                    <a href="https://hal.science/hal-04152028"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Continuous Time Emulation for Software-Defined Non-Terrestrial Edge Computing Networks</h3>
-                    <p class="text-gray-600 mb-3">Camilo Rojas, Juan A Fraire, Fabio Patrone, Alberto Gotta, Mario Marchese. European Wireless 2023; 28th European Wireless Conference, Oct 2023, Rome, Italy. </p>
-                    <a href="https://hal.science/hal-04711334" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">On the Tractability of Yen's Algorithm and Contact Graph
+                        Modeling in Contact Graph Routing</h3>
+                    <p class="text-gray-600 mb-3">Olivier de Jonckère, Juan A Fraire, Scott Burleigh. 2023 IEEE
+                        International Conference on Wireless for Space and Extreme Environments (WiSEE), Sep 2023,
+                        Aveiro, Portugal. pp.80-86.</p>
+                    <a href="https://hal.science/hal-04711336"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Network Size Estimation for LoRa-Based Direct-to-Satellite IoT</h3>
-                    <p class="text-gray-600 mb-3">Diego Maldonado, Juan A Fraire, Pablo Ilabaca, Hervé Rivano, Sandra Céspedes. 2023 IEEE Cognitive Communications for Aerospace Applications Workshop (CCAAW), Jun 2023, Cleveland, USA. pp.1-6,. </p>
-                    <a href="https://hal.science/hal-04711344" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Inter-Regional Routing in Interplanetary Networks with
+                        Shortcuts and Contact Passageways</h3>
+                    <p class="text-gray-600 mb-3">Olivier de Jonckère, Juan A Fraire. 2023 IEEE International Conference
+                        on Wireless for Space and Extreme Environments (WiSEE), Sep 2023, Aveiro, Portugal. pp.80-86.
+                    </p>
+                    <a href="https://hal.science/hal-04711330"
+                        class="text-primary font-medium inline-flex items-center">
+                        Read more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Continuous Time Emulation for Software-Defined
+                        Non-Terrestrial Edge Computing Networks</h3>
+                    <p class="text-gray-600 mb-3">Camilo Rojas, Juan A Fraire, Fabio Patrone, Alberto Gotta, Mario
+                        Marchese. European Wireless 2023; 28th European Wireless Conference, Oct 2023, Rome, Italy. </p>
+                    <a href="https://hal.science/hal-04711334"
+                        class="text-primary font-medium inline-flex items-center">
+                        Read more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Network Size Estimation for LoRa-Based Direct-to-Satellite
+                        IoT</h3>
+                    <p class="text-gray-600 mb-3">Diego Maldonado, Juan A Fraire, Pablo Ilabaca, Hervé Rivano, Sandra
+                        Céspedes. 2023 IEEE Cognitive Communications for Aerospace Applications Workshop (CCAAW), Jun
+                        2023, Cleveland, USA. pp.1-6,. </p>
+                    <a href="https://hal.science/hal-04711344"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -580,10 +724,14 @@
                     </div>
                 </div>
 
-                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
-                    <h3 class="text-lg font-semibold mb-2">Space-Terrestrial Integrated Internet of Things: Challenges and Opportunities</h3>
-                    <p class="text-gray-600 mb-3">Juan A Fraire, Oana Iova, Fabrice Valois. IEEE Communications Magazine, vol. 60, no. 12, pp. 64-70, December 2022.</p>
-                    <a href="https://hal.science/hal-03789116" class="text-primary font-medium inline-flex items-center">
+                <div
+                    class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Space-Terrestrial Integrated Internet of Things: Challenges
+                        and Opportunities</h3>
+                    <p class="text-gray-600 mb-3">Juan A Fraire, Oana Iova, Fabrice Valois. IEEE Communications
+                        Magazine, vol. 60, no. 12, pp. 64-70, December 2022.</p>
+                    <a href="https://hal.science/hal-03789116"
+                        class="text-primary font-medium inline-flex items-center">
                         Read more <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -592,9 +740,9 @@
                 <div class="w-full my-8">
                     <div class="flex items-center justify-center">
                         <hr class="flex-grow border-gray-300" />
-                        <a href="https://anr.hal.science/search/index/?q=*&anrProjectReference_s=ANR-22-CE25-0014" 
-                        class="px-4 text-sm text-primary font-semibold hover:underline" 
-                        target="_blank" rel="noopener noreferrer">
+                        <a href="https://anr.hal.science/search/index/?q=*&anrProjectReference_s=ANR-22-CE25-0014"
+                            class="px-4 text-sm text-primary font-semibold hover:underline" target="_blank"
+                            rel="noopener noreferrer">
                             See other publications in HAL
                         </a>
                         <hr class="flex-grow border-gray-300" />
@@ -602,13 +750,13 @@
                 </div>
 
             </div>
-            </div>
+        </div>
         </div>
     </section>
 
     <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
         class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-secondary transition">
-    ↑
+        ↑
     </button>
 
     <!-- Footer -->
@@ -621,7 +769,8 @@
                         <span class="text-xl font-bold">STEREO</span>
                     </div>
                     <p class="mt-4 text-gray-400 max-w-xs">
-                        Space-Terrestrial Integrated IoT - Financed by the French National Research Agency (ANR) under the project ANR-22-CE25-0014-01.
+                        Space-Terrestrial Integrated IoT - Financed by the French National Research Agency (ANR) under
+                        the project ANR-22-CE25-0014-01.
                     </p>
                     <img src="logo-anr.svg" alt="ANR Logo" class="mt-4 max-h-12" />
                 </div>
@@ -656,7 +805,7 @@
                     &copy; 2025 STEREO Project. All rights reserved.
                 </p>
                 <p class="text-gray-400 text-sm text-center">
-                    Created and maintained by 
+                    Created and maintained by
                     <a href="mailto:juan.fraire@inria.fr" class="text-primary hover:underline">
                         Juan A. Fraire
                     </a>
@@ -667,7 +816,7 @@
 
     <script>
         // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
@@ -676,17 +825,17 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     // Close mobile menu if open
                     const mobileMenu = document.getElementById('mobile-menu');
                     if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                     }
-                    
+
                     // Scroll to target
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
@@ -697,7 +846,7 @@
         });
 
         // Add shadow to navbar on scroll
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const nav = document.querySelector('nav');
             if (window.scrollY > 10) {
                 nav.classList.add('shadow-lg');
@@ -709,4 +858,5 @@
         });
     </script>
 </body>
+
 </html>
